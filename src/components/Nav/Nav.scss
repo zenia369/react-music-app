@@ -1,0 +1,45 @@
+nav {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+        background: white;
+        border: none;
+        cursor: pointer;
+        border: 1px solid rgb(197, 136, 255);
+        padding: .5rem;
+        color: rgb(151, 107, 192);
+        transition: all .3s ease-out;
+        &:hover {
+            background: rgb(151, 107, 192);
+            color: white;
+        }
+
+        svg {
+            margin-left: 10px;
+        }
+
+    }
+    .button-active {
+        background: rgb(151, 107, 192);
+        color: white;
+        &:hover {
+            border: 1px solid rgb(197, 136, 255);
+            background: white;
+            color: rgb(151, 107, 192);
+        }
+    }
+    h1 {
+        color: rgb(215, 172, 255);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        button {
+            z-index: 10;
+        }
+    }    
+}
